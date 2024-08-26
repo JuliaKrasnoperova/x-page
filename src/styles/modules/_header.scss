@@ -1,0 +1,105 @@
+@import '../_variables.scss';
+@import '../_fonts.scss';
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 120px;
+
+    @include laptop-1250 {
+        margin-bottom: 100px;
+    }
+
+    @include laptop {
+        margin-bottom: 70px;
+    }
+
+    @include mobile {
+        margin-bottom: 42px;
+    }
+
+}
+
+.header__banner {
+    background-image: url('/src/img/header/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 830px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.header__title {
+    margin-bottom: 48px;
+}
+
+.header__list {
+    display: flex;
+    gap: 8px;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.header__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    background: $second-color;
+    padding: 20px 24px;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+    @include mobile {
+        padding: 10px 14px;
+    }
+}
+
+.header__link-mobile {
+    display: none;
+
+    @include mobile-xs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__link-desktop {
+
+    @include mobile-xs {
+        display: none;
+    }
+}
+
+.header__link img {
+    display: none;
+}
+
+.header__link:hover {
+    background: $orange;
+    color: $second-color;
+}
+
+.header__link:hover img {
+    display: block;
+}
+
+.header__link:nth-child(1):hover .header__banner {
+    background-image: url('/src/img/header/1.jpg');
+}
+
+.header__text {
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

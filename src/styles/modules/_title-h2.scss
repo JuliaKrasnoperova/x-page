@@ -1,0 +1,25 @@
+@import '../_variables.scss';
+@import '../_fonts.scss';
+
+.title-h2 {
+    font-family: $font-family;
+    font-size: 80px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include desktop {
+        font-size: 65px;
+    }
+
+    @include laptop-1250 {
+        font-size: 60px;
+    }
+
+    @include tablet {
+        font-size: 40px;
+    }
+
+    @include laptop {
+        font-size: 26px;
+    }
+}

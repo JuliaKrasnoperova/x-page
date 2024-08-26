@@ -1,0 +1,104 @@
+@import '../variables.scss';
+@import '../_fonts.scss';
+
+.footer {
+    position: relative;
+    border-top: 1px solid $main-color;
+    min-height: 693px;
+}
+
+.footer__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -99999;
+
+    @include mobile {
+        bottom: 100px;
+        width: 216px;
+    }
+}
+
+.footer__title {
+    padding-top: 55px;
+    margin-bottom: 32px;
+
+    @include mobile {
+        padding-top: 20px;
+    }
+
+}
+
+.footer__stores {
+    display: flex;
+    gap: 37px;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+
+.footer__wrapper {
+    display: flex;
+    gap: 121px;
+
+    @include laptop {
+        gap: 0;
+    }
+}
+
+.footer__stores {}
+
+.footer__card {
+    margin-top: 65px;
+    border-radius: 30px;
+    background: $second-color;
+    padding: 44px;
+    width: 352px;
+    height: 401px;
+    text-align: center;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.footer__card img {
+    margin: 0 auto 36px auto;
+
+    @include tablet {
+        width: 500px;
+    }
+
+}
+
+.footer__card span {
+    display: inline-block;
+    font-family: $third-family;
+    color: #747474;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 12px;
+}
+
+.footer__card p {
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer__copy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    padding-left: 15px;
+}

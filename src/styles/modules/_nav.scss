@@ -1,0 +1,111 @@
+@import '../_variables.scss';
+@import '../_fonts.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: $second-color;
+    padding: 14px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @include mobile {
+        justify-content: center;
+        gap: 69px;
+    }
+
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include laptop {
+        display: none;
+    }
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    @include laptop-1250 {
+        gap: 20px;
+    }
+
+    @include mobile {
+        gap: 69px;
+    }
+}
+
+.nav__link-profile a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: $bg-color;
+    padding: 3px 3px 3px 16px;
+    border-radius: 20px;
+
+    @include mobile {
+        background: transparent;
+        padding: 0;
+    }
+
+}
+
+.nav__link-profile img {
+    border-radius: 20px;
+}
+
+.nav__link {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.nav__items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__icon-name {
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__icon {
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__link-profile span {
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__link-mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.nav__icon-mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}

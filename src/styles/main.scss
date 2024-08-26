@@ -1,0 +1,19 @@
+@import './_base.scss';
+@import './_fonts.scss';
+@import './_media.scss';
+@import './_reset.scss';
+@import './_variables.scss';
+
+// sections
+@import './modules/_header.scss';
+@import './modules/_nav.scss';
+@import './modules/_play.scss';
+@import './modules/_study.scss';
+@import './modules/_footer.scss';
+
+// blocks
+@import './modules/_title.scss';
+@import './modules/_title-h2.scss';
+@import './modules/_title-h3.scss';
+@import './modules/_title-h4.scss';
+@import './modules/_title-h5.scss';

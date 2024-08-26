@@ -1,0 +1,21 @@
+@import '../_variables.scss';
+@import '../_fonts.scss';
+
+.title-h4 {
+    color: $second-color;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include desktop {
+        font-size: 40px;
+    }
+
+    @include tablet {
+        font-size: 30px;
+    }
+
+    @include mobile {
+        font-size: 20px;
+    }
+}

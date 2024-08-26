@@ -1,0 +1,29 @@
+@import '../_variables.scss';
+@import '../_fonts.scss';
+
+.title {
+    font-family: $font-family;
+    color: $second-color;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include desktop {
+        font-size: 70px;
+    }
+
+    @include laptop-1250 {
+        font-size: 60px;
+    }
+
+    @include laptop {
+        font-size: 50px;
+    }
+
+    @include tablet {}
+
+    @include mobile {
+        font-size: 26px;
+    }
+}
