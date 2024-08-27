@@ -194,7 +194,6 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.images.src, img);
-  // gulp.watch(paths.fonts.src, fonts);
 }
 
 // Таски для ручного запуска с помощью gulp clean, gulp html и т.д.
