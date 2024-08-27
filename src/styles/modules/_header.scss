@@ -20,7 +20,7 @@
 }
 
 .header__banner {
-    background-image: url('/src/img/header/3.jpg');
+    background-image: url('../images/header/3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,6 +28,10 @@
     border-radius: 20px;
     padding: 20px;
     position: relative;
+
+    @include mobile-xs {
+        height: 516px;
+    }
 
 }
 
@@ -41,6 +45,10 @@
 
     @include tablet {
         flex-direction: column;
+    }
+
+    @include mobile {
+        gap: 4px;
     }
 }
 
